@@ -8,7 +8,7 @@ def hello(environment){
     //data = readYaml file: "pipeline-library-demo/vars/test.yml"
     def datas = readYaml text: """
   accounts:
-    'dev':
+    dev:
       account_id: '12312142'
       apiKey: JENK-YY92WIWSI4W6RJMZVMRAO6G2RFR
     qa:

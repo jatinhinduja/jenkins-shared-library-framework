@@ -27,7 +27,7 @@ def hello(String environment){
        // assert datas[1].something == 'my second document'
 //modify
  echo "${environment}"
- echo "${datas.accounts.{environment}}"
+ echo "${datas.accounts.qa}}"
 
 
 }

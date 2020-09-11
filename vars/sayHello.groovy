@@ -10,11 +10,11 @@ def hello(){
         something: 'my first document'
         something: 'my second document'
 """
-        assert datas.size() == 2
-        assert datas[0].something == 'my first document'
-        assert datas[1].something == 'my second document'
+       // assert datas.size() == 2
+       // assert datas[0].something == 'my first document'
+       // assert datas[1].something == 'my second document'
 //modify
- //echo "${data.info}"
+ echo "${datas[0].something}"
 
 
 }

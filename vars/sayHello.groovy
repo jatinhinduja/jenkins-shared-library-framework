@@ -4,7 +4,7 @@
 
  
 
-def hello(String environment){
+def hello(environment){
     //data = readYaml file: "pipeline-library-demo/vars/test.yml"
     def datas = readYaml text: """
   accounts:
@@ -27,7 +27,7 @@ def hello(String environment){
        // assert datas[1].something == 'my second document'
 //modify
  echo "${environment}"
- echo "${datas.accounts.qa}}"
+ echo "${datas.accounts.environment}}"
 
 
 }

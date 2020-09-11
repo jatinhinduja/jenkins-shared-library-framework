@@ -4,7 +4,7 @@
 
  
 
-def hello(${environment}){
+def hello(String environment){
     //data = readYaml file: "pipeline-library-demo/vars/test.yml"
     def datas = readYaml text: """
   accounts:
@@ -33,6 +33,6 @@ def hello(${environment}){
 
 def call(String environment = 'dev') {
   echo "Hello, ${environment}."
-  hello(${environment})
+  hello(environment)
 }
 

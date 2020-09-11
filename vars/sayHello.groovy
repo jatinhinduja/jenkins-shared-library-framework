@@ -5,7 +5,7 @@
  
 
 def hello(){
-    data = readYaml file: "test.yml"
+    data = readYaml file: "pipeline-library-demo/vars/test.yml"
 //modify
  echo "${data.info}"
 

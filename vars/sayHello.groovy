@@ -27,7 +27,7 @@ def hello(environment){
        // assert datas[1].something == 'my second document'
 //modify
  echo "${environment}"
- if(environment='dev'){
+ if(environment=='dev'){
   echo "${datas.accounts.dev}"}
 
 

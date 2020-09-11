@@ -6,14 +6,15 @@
 
 def hello(){
     //data = readYaml file: "pipeline-library-demo/vars/test.yml"
-    data = readYaml text: """
-    data:
-     info: change me
-     aaa: bbb
-     ddd: ccc
-    """
+    def datas = readYaml text: """
+        something: 'my first document'
+        something: 'my second document'
+"""
+        assert datas.size() == 2
+        assert datas[0].something == 'my first document'
+        assert datas[1].something == 'my second document'
 //modify
- echo "${data.info}"
+ //echo "${data.info}"
 
 
 }

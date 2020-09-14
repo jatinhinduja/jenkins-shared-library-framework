@@ -46,4 +46,11 @@ class GlobalVars {
 }
 
 
+
+	static def test(){
+
+		parse_yml('dev')
+	}
+
+
 }

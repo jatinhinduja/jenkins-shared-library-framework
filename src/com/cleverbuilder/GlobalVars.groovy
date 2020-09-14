@@ -9,9 +9,9 @@ class GlobalVars {
    // import com.cleverbuilder.GlobalVars
    // println GlobalVars.foo
 
-   static def parse_yml(environment){
+   def parse_yml(environment){
 //    def datas = readYaml file: "test.yml"
-     datas = readYaml text: """
+    def datas = readYaml text: """
    accounts:
     dev:
       account_id: '12312142'

@@ -5,7 +5,7 @@
  
 
 def parse_yml(environment){
-    def datas = readYaml file: "pipeline-library-demo/vars/test.yml"
+    def datas = readYaml file: "test.yml"
 //     def datas = readYaml text: """
 //    accounts:
 //     dev:

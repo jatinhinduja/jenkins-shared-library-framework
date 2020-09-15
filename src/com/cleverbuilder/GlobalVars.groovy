@@ -10,9 +10,9 @@ class GlobalVars implements Serializable {
    // println GlobalVars.foo
 
 
-   static def parse_yml(environment){
+   static void parse_yml(environment){
    // def datas = readYaml file: "test.yml"
-   static def datas = readYaml text: """
+   def datas = readYaml text: """
    accounts:
     dev:
       account_id: '12312142'
@@ -43,11 +43,7 @@ class GlobalVars implements Serializable {
   echo "${datas.accounts.prod}"}
  else{echo "Please select a correct environment!!"}
 
-
-
 }
-
-
 
 	// def call(){
 

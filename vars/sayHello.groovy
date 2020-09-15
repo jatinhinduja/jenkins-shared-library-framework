@@ -43,11 +43,11 @@ def parse_yml(environment){
 
 def call(String environment = 'dev') {
   echo "Hello, ${environment}."
-  parse_yml(environment)
+  // parse_yml(environment)
 
-  // def t = new Test('a')
-  // t.func()
-  // t.parse_yml(environment)
+  def t = new Test('a')
+  t.func()
+  t.parse_yml(environment)
 
 }
 

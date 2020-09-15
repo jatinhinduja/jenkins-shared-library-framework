@@ -2,12 +2,12 @@
 package com.cleverbuilder
 
 
-class Test implements Serializable{
-  String val
-  Test(val) {
-    this.val = val
-  }
-}
+// class Test implements Serializable{
+//   String val
+//   Test(val) {
+//     this.val = val
+//   }
+// }
 
 
 class GlobalVars implements Serializable {

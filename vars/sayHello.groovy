@@ -46,7 +46,7 @@ def call(String environment = 'dev') {
   parse_yml(environment)
 
   def t = new Test('a')
-    t.func()
+  t.func()
 
 }
 

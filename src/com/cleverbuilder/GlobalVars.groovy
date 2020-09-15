@@ -11,7 +11,7 @@ class GlobalVars {
 
    static def parse_yml(environment){
    // def datas = readYaml file: "test.yml"
-   static def datas = readYaml text: """
+   def datas = readYaml text: """
    accounts:
     dev:
       account_id: '12312142'

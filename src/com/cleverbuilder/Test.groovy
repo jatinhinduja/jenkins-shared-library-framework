@@ -6,7 +6,7 @@ class Test implements Serializable{
   String val
   Test(val) {
     this.val = val
-    echo '${this.val}"
+    echo "${this.val}"
   }
 }
 

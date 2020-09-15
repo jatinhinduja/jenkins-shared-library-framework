@@ -9,5 +9,12 @@ class Test implements Serializable{
     println "${this.val}"
     println "Hello World"
   }
+
+  def func(){
+
+    println "val"
+  }
+
+
 }
 

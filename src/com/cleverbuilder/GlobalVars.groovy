@@ -1,6 +1,15 @@
 #!/usr/bin/env groovy
 package com.cleverbuilder
 
+
+class Test implements Serializable{
+  String val
+  Test(val) {
+    this.val = val
+  }
+}
+
+
 class GlobalVars implements Serializable {
    static String foo = "bar"
 
@@ -10,7 +19,7 @@ class GlobalVars implements Serializable {
    // println GlobalVars.foo
 
 
-   static void parse_yml(environment){
+   static def parse_yml(environment){
    // def datas = readYaml file: "test.yml"
    def datas = readYaml text: """
    accounts:

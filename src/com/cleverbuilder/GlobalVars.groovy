@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 package com.cleverbuilder
 
-class GlobalVars {
+class GlobalVars implements Serializable {
    static String foo = "bar"
 
    // refer to this in a pipeline using:

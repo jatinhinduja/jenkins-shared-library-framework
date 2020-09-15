@@ -12,7 +12,7 @@ class Test implements Serializable{
 
   def func(){
 
-    print(val)
+    print("val")
   }
 
 

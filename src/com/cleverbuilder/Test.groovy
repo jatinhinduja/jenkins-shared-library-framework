@@ -7,6 +7,7 @@ class Test implements Serializable{
   Test(val) {
     this.val = val
     println "${this.val}"
+    println "Hello World"
   }
 }
 

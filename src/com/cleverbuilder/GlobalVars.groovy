@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
-import groovy.yaml.YamlSlurper
 package com.cleverbuilder
+import groovy.yaml.YamlSlurper
+
 
 
 // class Test implements Serializable{

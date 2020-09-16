@@ -19,6 +19,11 @@ class GlobalVars implements Serializable {
    // println GlobalVars.foo
 
 
+   static def fun(){
+
+   	println "Hello from fun-----"
+   }
+
    static def parse_yml(environment){
    // def datas = readYaml file: "test.yml"
    def datas = readYaml text: """

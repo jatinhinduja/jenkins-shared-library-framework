@@ -21,7 +21,7 @@ class GlobalVars implements Serializable {
 
    static def fun(){
 
-   	println "Hello from fun-----"
+   	return "Hello from fun-----"
    }
 
    static def parse_yml(environment){

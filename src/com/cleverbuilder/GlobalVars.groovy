@@ -1,6 +1,8 @@
 #!/usr/bin/env groovy
 package com.cleverbuilder
-import groovy.yaml.YamlSlurper
+// import groovy.yaml.YamlSlurper
+@Grab(group='org.yaml', module='snakeyaml', version='1.5')
+import org.yaml.snakeyaml.Yaml
 
 
 
@@ -52,7 +54,11 @@ class GlobalVars implements Serializable {
        // assert datas[1].something == 'my second document'
 //modify
  // echo "${environment}"
- def datas = new YamlSlurper().parseText(configYaml)
+
+def yaml = new Yaml()
+def datas = yaml.load(configYaml)
+
+ // def datas = new YamlSlurper().parseText(configYaml)
 
  if(environment=='dev'){
   return "${datas.accounts.dev}"}

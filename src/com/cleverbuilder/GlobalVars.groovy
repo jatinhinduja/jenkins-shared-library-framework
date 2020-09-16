@@ -46,16 +46,16 @@ class GlobalVars implements Serializable {
        // assert datas[0].something == 'my first document'
        // assert datas[1].something == 'my second document'
 //modify
- echo "${environment}"
+ // echo "${environment}"
  if(environment=='dev'){
-  echo "${datas.accounts.dev}"}
+  return "${datas.accounts.dev}"}
  else if(environment=='qa'){
-  echo "${datas.accounts.qa}"}
+  return "${datas.accounts.qa}"}
  else if(environment=='staging'){
-  echo "${datas.accounts.staging}"}
+  return "${datas.accounts.staging}"}
  else if(environment=='prod'){
-  echo "${datas.accounts.prod}"}
- else{echo "Please select a correct environment!!"}
+  return "${datas.accounts.prod}"}
+ else{return "Please select a correct environment!!"}
 
 }
 

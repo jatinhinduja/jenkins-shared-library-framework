@@ -1,4 +1,5 @@
 #!/usr/bin/env groovy
+import groovy.yaml.YamlSlurper
 package com.cleverbuilder
 
 
@@ -26,7 +27,10 @@ class GlobalVars implements Serializable {
 
    static def parse_yml(environment){
    // def datas = readYaml file: "test.yml"
-   def datas = readYaml text: """
+   
+   // def datas = readYaml text: """
+   
+   def configYaml = """
    accounts:
     dev:
       account_id: '12312142'
@@ -47,6 +51,8 @@ class GlobalVars implements Serializable {
        // assert datas[1].something == 'my second document'
 //modify
  // echo "${environment}"
+ def datas = new YamlSlurper().parseText(configYaml)
+
  if(environment=='dev'){
   return "${datas.accounts.dev}"}
  else if(environment=='qa'){
